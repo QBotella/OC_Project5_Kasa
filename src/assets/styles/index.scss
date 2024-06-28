@@ -1,0 +1,25 @@
+// Import font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+// Import feuille de reset
+@import "base/reset";
+
+// Import des feuille asbtracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// Import des feuilles des Layout
+@import "layout/header";
+
+// Import des feuilles des pages
+@import "pages/home";
+@import "pages/a_propos";
+@import "pages/error";
+@import "pages/fiche_logement";
+
+// Import des feuilles des composants
+@import "components/banner";

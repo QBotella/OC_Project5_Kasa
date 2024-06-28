@@ -1,0 +1,30 @@
+.banner {
+  margin: 0 100px;
+  width: calc(100% - 200px);
+  border-radius: 25px;
+  @include flex-center;
+  box-shadow: $box-shadow;
+  @include background-img-banner($img-falaise);
+  br {
+    display: none;
+  }
+  .banner__title {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+  }
+}
+
+@include respond-to("mobile") {
+  .banner {
+    margin: 0 20px;
+    width: calc(100% - 40px);
+    @include background-img-banner($img-falaise, 111px);
+    .banner__title {
+      font-size: 24px;
+    }
+    br {
+      display: block;
+    }
+  }
+}

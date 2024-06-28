@@ -1,0 +1,29 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin background-img-banner(
+  $image,
+  $height: 223px,
+  $linear-gradient: rgba(0, 0, 0, 0.6)
+) {
+  height: $height;
+  background: linear-gradient($linear-gradient, $linear-gradient), url($image);
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin respond-to($breakpoint) {
+  $breakpoint-value: map-get($breakpoints, $breakpoint);
+  @media (max-width: $breakpoint-value) {
+    @content;
+  }
+}
