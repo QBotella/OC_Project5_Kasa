@@ -1,0 +1,13 @@
+.home {
+  margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+}
+
+@include respond-to("mobile") {
+  .home {
+    margin: 0 20px;
+    gap: 22px;
+  }
+}

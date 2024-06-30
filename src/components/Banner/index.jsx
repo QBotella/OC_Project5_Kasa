@@ -1,8 +1,12 @@
-function Banner() {
+function Banner({ home, page }) {
   return (
-    <div className="banner">
-      <h1 className="banner__title">
-        Chez vous, <br /> partout et ailleurs
+    <div className={page === "about" ? "banner__about" : "banner"}>
+      <h1>
+        {home && (
+          <h1>
+            Chez vous, <br /> partout et ailleurs
+          </h1>
+        )}
       </h1>
     </div>
   )
