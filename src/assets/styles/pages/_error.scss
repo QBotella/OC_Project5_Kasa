@@ -1,0 +1,46 @@
+.error {
+  @include flex-center;
+  flex-direction: column;
+  gap: 139px;
+  margin: 139px 0;
+  h1 {
+    color: $primary-color;
+    font-size: 288px;
+    font-weight: 700;
+    margin: 0;
+  }
+  h2 {
+    color: $primary-color;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+  }
+  br {
+    display: none;
+  }
+  a {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+@include respond-to("mobile") {
+  .error {
+    gap: 113px;
+    margin: 113px 0;
+    h1 {
+      font-size: 96px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    br {
+      display: block;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
