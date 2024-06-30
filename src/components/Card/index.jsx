@@ -1,22 +1,13 @@
-import PropTypes from "prop-types"
-
 function Card({ card }) {
-  const backgroundImageStyle = {
+  const backgroundImage = {
     backgroundImage: `url(${card.cover})`,
-  }
+  };
 
   return (
-    <article className="card" style={backgroundImageStyle}>
+    <article className="card" style={backgroundImage}>
       <h1>{card.title}</h1>
     </article>
-  )
+  );
 }
 
-Card.propTypes = {
-  card: PropTypes.shape({
-    cover: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }).isRequired,
-}
-
-export default Card
+export default Card;

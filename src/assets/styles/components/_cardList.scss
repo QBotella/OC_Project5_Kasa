@@ -1,0 +1,27 @@
+.cards__list {
+  margin: 0 100px;
+  padding: 56px 50px 43px 50px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  a {
+    flex: 1 calc(33.333% - 60px);
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+}
+
+@include respond-to("mobile") {
+  .cards__list {
+    margin: 20px;
+    padding: 0;
+    gap: 20px;
+    a {
+      flex: 1 100%;
+    }
+  }
+}

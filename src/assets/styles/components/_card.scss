@@ -1,0 +1,19 @@
+.card {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  h1 {
+    width: calc(100% - 40px);
+    padding: 20px;
+    color: white;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
