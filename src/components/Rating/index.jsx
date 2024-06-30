@@ -1,5 +1,3 @@
-import PropTypes from "prop-types"
-
 const Rating = ({ rating }) => {
   const totalStars = 5
   const activeStar = "/src/assets/img/star_active.png"
@@ -17,10 +15,6 @@ const Rating = ({ rating }) => {
       ))}
     </div>
   )
-}
-
-Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
 }
 
 export default Rating
