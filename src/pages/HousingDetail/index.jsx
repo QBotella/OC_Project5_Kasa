@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import Slider from "../../components/Slider/index"
 import Collapse from "../../components/Collapse"
 import Rating from "../../components/Rating"
@@ -6,6 +6,10 @@ import Rating from "../../components/Rating"
 const HousingDetail = ({ datas }) => {
   const { id } = useParams()
   const housing = datas.find((item) => item.id === id)
+
+  if (!housing) {
+    return <Navigate to="*" />
+  }
 
   const [firstName, lastName] = housing.host.name.split(" ")
 
