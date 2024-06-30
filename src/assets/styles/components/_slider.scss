@@ -13,8 +13,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    height: 79px;
-    width: 47px;
     border: none;
     background-color: transparent;
     padding: 0;
@@ -46,4 +44,25 @@
 
 .next-button {
   right: 23px;
+}
+
+@include respond-to("mobile") {
+  .slider {
+    img {
+      height: 255px;
+    }
+    button .icon {
+      height: 20px;
+      width: 12px;
+    }
+    .slider__number {
+      display: none;
+    }
+  }
+  .next-button {
+    right: 6px;
+  }
+  .prev-button {
+    left: 6px;
+  }
 }
