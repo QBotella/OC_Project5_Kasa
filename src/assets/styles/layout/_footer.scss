@@ -1,0 +1,23 @@
+.footer {
+  background-color: #000;
+  text-align: center;
+  img {
+    margin-top: 66px;
+  }
+  p {
+    color: white;
+    padding-bottom: 29px;
+    br {
+      display: none;
+    }
+  }
+}
+
+@include respond-to("mobile") {
+  p {
+    padding-bottom: 58px !important;
+  }
+  br {
+    display: block !important;
+  }
+}

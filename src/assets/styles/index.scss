@@ -5,6 +5,16 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+}
+
 // Import feuille de reset
 @import "base/reset";
 
@@ -14,6 +24,7 @@ body {
 
 // Import des feuilles des Layout
 @import "layout/header";
+@import "layout/footer";
 
 // Import des feuilles des pages
 @import "pages/home";
