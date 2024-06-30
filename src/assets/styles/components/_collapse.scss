@@ -9,6 +9,7 @@
     padding: 10px 20px 10px 15px;
     @include flex-between;
     border: none;
+    border-radius: 10px;
     img {
       height: 24px;
       width: 24px;
@@ -34,7 +35,7 @@
   }
 
   .collapse__content.open {
-    max-height: 500px; /* Hauteur maximale lorsque ouvert */
+    max-height: 1000px; /* Hauteur maximale lorsque ouvert */
     padding-top: 20px;
     padding-bottom: 20px;
   }

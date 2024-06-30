@@ -1,7 +1,7 @@
 import Banner from "../../components/Banner"
 import Collapse from "../../components/Collapse"
 
-function A_Propos() {
+function About() {
   const collapseData = [
     {
       title: "Fiabilité",
@@ -39,4 +39,4 @@ function A_Propos() {
   )
 }
 
-export default A_Propos
+export default About

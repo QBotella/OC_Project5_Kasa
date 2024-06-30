@@ -14,10 +14,12 @@
 }
 
 @include respond-to("mobile") {
-  p {
-    padding-bottom: 58px !important;
-  }
-  br {
-    display: block !important;
+  .footer {
+    p {
+      padding-bottom: 58px !important;
+    }
+    br {
+      display: block !important;
+    }
   }
 }

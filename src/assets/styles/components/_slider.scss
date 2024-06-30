@@ -1,0 +1,49 @@
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover; /* Ensure the image covers the slider area without distortion */
+    max-height: 415px; /* Set the max height to 415px */
+  }
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 79px;
+    width: 47px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    .icon {
+      height: 79px;
+      width: 47px;
+      color: white;
+    }
+  }
+  .slider__number {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    p {
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+}
+
+.prev-button {
+  left: 23px;
+}
+
+.next-button {
+  right: 23px;
+}

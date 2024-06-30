@@ -1,0 +1,135 @@
+.housingDetail {
+  margin: 50px 100px;
+  @include flex-column;
+  gap: 30px;
+
+  .housingDetail__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 0px;
+    .housingDetail__nameLocation {
+      @include flex-column;
+      grid-column: 1/2;
+      gap: 0px;
+      h1 {
+        color: $primary-color;
+        font-size: 36px;
+        white-space: nowrap;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+    .housingDetail__host {
+      display: flex;
+      justify-content: flex-end;
+      grid-column: 2/2;
+      gap: 10px;
+      align-items: center;
+      p {
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+      }
+      img {
+        border-radius: 50%;
+        max-width: 64px;
+        max-height: 64px;
+      }
+    }
+    .housingDetail__tags {
+      grid-row: 2/2;
+      grid-column: 1/2;
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      span {
+        background-color: $primary-color;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        @include flex-center;
+        margin: auto;
+        flex: 1;
+        color: white;
+        height: 25px;
+      }
+    }
+
+    .housingDetail__rating {
+      grid-row: 2/2;
+      grid-column: 2/2;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .housingDetail__collapse {
+      grid-row: 3/3;
+      grid-column: 1/-1;
+      display: flex;
+      gap: 76px;
+      .collapse {
+        flex: 1;
+        ul {
+          margin: 0;
+          padding: 0;
+        }
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to("mobile") {
+  .housingDetail {
+    margin: 20px;
+    .housingDetail__info {
+      .housingDetail__nameLocation {
+        grid-column: 1/-1;
+        gap: 5px;
+        h1 {
+          font-size: 18px;
+          white-space: wrap;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .housingDetail__tags {
+        grid-column: 1/-1;
+        grid-row: 2/2;
+        span {
+          font-size: 10px;
+        }
+      }
+      .housingDetail__host {
+        grid-column: 2/2;
+        grid-row: 3/4;
+        p {
+          font-size: 12px;
+        }
+        img {
+          max-width: 32px;
+          max-height: 32px;
+        }
+      }
+      .housingDetail__rating {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .housingDetail__collapse {
+        grid-row: 4/4;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+}

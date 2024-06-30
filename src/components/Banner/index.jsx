@@ -3,9 +3,9 @@ function Banner({ home, page }) {
     <div className={page === "about" ? "banner__about" : "banner"}>
       <h1>
         {home && (
-          <h1>
+          <p>
             Chez vous, <br /> partout et ailleurs
-          </h1>
+          </p>
         )}
       </h1>
     </div>

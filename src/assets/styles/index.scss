@@ -28,12 +28,14 @@ body {
 
 // Import des feuilles des pages
 @import "pages/home";
-@import "pages/a_propos";
+@import "pages/about";
 @import "pages/error";
-@import "pages/fiche_logement";
+@import "pages/housingDetail";
 
 // Import des feuilles des composants
 @import "components/banner";
 @import "components/card";
 @import "components/cardList";
 @import "components/collapse";
+@import "components/slider";
+@import "components/rating";

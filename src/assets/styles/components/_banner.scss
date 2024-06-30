@@ -7,7 +7,7 @@
   br {
     display: none;
   }
-  h1 {
+  p {
     color: white;
     font-size: 48px;
     font-weight: 700;
@@ -22,7 +22,7 @@
   .banner {
     width: 100%;
     @include background-img-banner($img_falaise, 111px);
-    h1 {
+    p {
       font-size: 24px;
     }
     br {
