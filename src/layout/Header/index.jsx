@@ -10,7 +10,7 @@ function Header() {
   return (
     <nav className="header">
       <img className="header__logo" src={Logo} alt="Logo Kasa" />
-      <ul className="header__ul">
+      <ul>
         <li className={`header__link ${isActive("/") ? "active" : ""}`}>
           <Link to="/">Accueil</Link>
         </li>

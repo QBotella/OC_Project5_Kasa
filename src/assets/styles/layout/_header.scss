@@ -4,7 +4,7 @@
   .header__logo {
     max-height: 68px;
   }
-  .header__ul {
+  ul {
     display: flex;
     list-style-type: none;
   }
@@ -25,6 +25,7 @@
   .header__link {
     font-size: 12px !important;
     padding-left: 27px !important;
+    text-transform: uppercase;
   }
   .header__logo {
     max-width: 145px;
