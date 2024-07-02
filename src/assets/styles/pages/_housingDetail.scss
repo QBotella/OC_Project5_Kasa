@@ -52,9 +52,8 @@
         border-radius: 10px;
         font-size: 14px;
         font-weight: 700;
+        padding: 0 2rem;
         @include flex-center;
-        margin: auto;
-        flex: 1;
         color: white;
         height: 25px;
       }
@@ -106,6 +105,7 @@
         grid-row: 2/2;
         span {
           font-size: 10px;
+          padding: 0 1rem;
         }
       }
       .housingDetail__host {

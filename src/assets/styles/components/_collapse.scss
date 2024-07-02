@@ -16,13 +16,11 @@
     }
   }
   &__icon {
-    transition: transform 0.3s ease; /* Transition pour l'animation de rotation */
+    transition: transform 0.3s ease;
   }
 
   &__icon.open {
-    transform: rotate(
-      180deg
-    ); /* Rotation de l'icône lorsque le collapse est ouvert */
+    transform: rotate(-180deg);
   }
   &__content {
     max-height: 0;
@@ -35,9 +33,9 @@
   }
 
   &__content.open {
-    max-height: 1000px; /* Hauteur maximale lorsque ouvert */
-    padding-top: 20px;
+    max-height: 1000px;
     padding-bottom: 20px;
+    padding-top: 1rem;
   }
 }
 

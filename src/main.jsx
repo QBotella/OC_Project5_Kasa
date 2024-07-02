@@ -7,7 +7,7 @@ import About from "./pages/About"
 import Header from "./layout/Header"
 import Error from "./pages/Error"
 import "./assets/styles/index.scss"
-import datas from "./data/datas.json" // Assurez-vous que le chemin est correct
+import datas from "./data/datas.json"
 import Footer from "./layout/Footer"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Routes>
           <Route path="/" element={<Home datas={datas} />} />
           <Route path="/:id" element={<HousingDetail datas={datas} />} />
-          <Route path="/A_Propos" element={<About />} />
+          <Route path="/a-propos" element={<About />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
