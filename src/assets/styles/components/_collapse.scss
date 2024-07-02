@@ -1,6 +1,6 @@
 .collapse {
   @include flex-column;
-  .collapse__btn {
+  &__btn {
     width: 100%;
     background-color: $primary-color;
     color: $secondary-color;
@@ -15,16 +15,16 @@
       width: 24px;
     }
   }
-  .collapse__icon {
+  &__icon {
     transition: transform 0.3s ease; /* Transition pour l'animation de rotation */
   }
 
-  .collapse__icon.open {
+  &__icon.open {
     transform: rotate(
       180deg
     ); /* Rotation de l'icône lorsque le collapse est ouvert */
   }
-  .collapse__content {
+  &__content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding-top 0.3s ease-out,
@@ -34,7 +34,7 @@
     padding-right: 20px;
   }
 
-  .collapse__content.open {
+  &__content.open {
     max-height: 1000px; /* Hauteur maximale lorsque ouvert */
     padding-top: 20px;
     padding-bottom: 20px;

@@ -3,7 +3,7 @@
   @include flex-column;
   gap: 30px;
 
-  .housingDetail__info {
+  &__info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 0px;

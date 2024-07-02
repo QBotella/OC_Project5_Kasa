@@ -1,14 +1,14 @@
 .header {
   @include flex-between;
   margin: 45px 100px 0 100px;
-  .header__logo {
+  &__logo {
     max-height: 68px;
   }
   ul {
     display: flex;
     list-style-type: none;
   }
-  .header__link {
+  &__link {
     padding-left: 57px;
     font-size: 24px;
     font-weight: 500;
@@ -21,13 +21,13 @@
 @include respond-to("mobile") {
   .header {
     margin: 20px 20px 0 20px;
-  }
-  .header__link {
-    font-size: 12px !important;
-    padding-left: 27px !important;
-    text-transform: uppercase;
-  }
-  .header__logo {
-    max-width: 145px;
+    &__link {
+      font-size: 12px !important;
+      padding-left: 27px !important;
+      text-transform: uppercase;
+    }
+    &__logo {
+      max-width: 145px;
+    }
   }
 }

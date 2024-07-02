@@ -23,7 +23,7 @@
       color: white;
     }
   }
-  .slider__number {
+  &__number {
     position: absolute;
     bottom: 25px;
     left: 50%;
@@ -55,7 +55,7 @@
       height: 20px;
       width: 12px;
     }
-    .slider__number {
+    &__number {
       display: none;
     }
   }
